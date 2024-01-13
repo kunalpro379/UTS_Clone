@@ -1,22 +1,34 @@
-// custom_icon.dart
 import 'package:flutter/material.dart';
 
-class CustomCircleIconD extends StatelessWidget {
+class CustomCircleIcon extends StatelessWidget {
+  final Color color;
+  final double width;
+  final double height;
+  final String TEXT;
+
+  CustomCircleIcon({
+    required this.color,
+    required this.width,
+    required this.height,
+    required this.TEXT,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 40.0,
-      height: 40.0,
+      width: width,
+      height: height,
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color:
-            Color.fromARGB(255, 251, 140, 80), // Set your desired circle color
+        shape: BoxShape.rectangle,
+        borderRadius: BorderRadius.circular(
+            height / 2.0), // Use borderRadius to create an oval shape
+        color: color,
       ),
       child: Center(
         child: Text(
-          "D",
+          TEXT,
           style: TextStyle(
-            color: Colors.white, // Set the color of the "S" text
+            color: Colors.white,
             fontWeight: FontWeight.w700,
           ),
         ),

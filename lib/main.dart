@@ -7,11 +7,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final TickData tickData;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ticket(tickData), // Use the HomeScreen widget here
+      home: TICKSCREEN(), // Use the HomeScreen widget here
     );
   }
 }

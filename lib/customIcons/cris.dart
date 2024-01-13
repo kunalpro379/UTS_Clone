@@ -1,30 +1,25 @@
+// custom_icon.dart
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
-class CircleAvatarWithIcon extends StatelessWidget {
-  final String imagePath;
-  final double radius;
-
-  CircleAvatarWithIcon({
-    required this.imagePath,
-    required this.radius,
-  });
-
+class CustomCircleIconCRIS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: radius * 2,
-      height: radius * 2,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: const Color.fromARGB(
-            255, 255, 255, 255), // Set your desired circle color
-      ),
-      child: ClipOval(
-        child: Image.asset(
-          "lib/assets/cris.png",
-          width: radius * 2,
-          height: radius * 2,
-          fit: BoxFit.cover,
+    return Padding(
+      padding: const EdgeInsets.only(left: 10),
+      child: Container(
+        width: 30.0,
+        height: 30.0,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: const Color.fromARGB(
+              255, 255, 255, 255), // Set your desired circle color
+        ),
+        child: Center(
+          child: Image.asset(
+            'lib/assets/CRIS.jpg',
+            fit: BoxFit.cover, // Specify BoxFit for the image
+          ),
         ),
       ),
     );
