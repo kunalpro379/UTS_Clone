@@ -42,9 +42,9 @@ class MovingTextWidState extends State<MovingTextWid>
         child: Text(
           'IR Unreserved Ticketing',
           style: TextStyle(
-            color: Color.fromARGB(255, 0, 174, 255),
-            fontSize: 18.0,
-          ),
+              color: Color.fromARGB(255, 0, 174, 255),
+              fontSize: 18.0,
+              fontWeight: FontWeight.w600),
         ),
       ),
     );

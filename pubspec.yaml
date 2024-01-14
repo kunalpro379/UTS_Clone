@@ -64,6 +64,23 @@ flutter:
     - lib/assets/CRIS.jpg
     - lib/assets/S.jpg
     - lib/assets/D.jpg
+    - lib/assets/IR.png
+    - lib/assets/UTS_LOGO.png
+    - lib/assets/lang.jpg
+    - lib/assets/cancel.jpg
+    - lib/assets/jrny_ticket.jpg
+    - lib/assets/profile.jpg
+    - lib/assets/qr_code.jpg
+    - lib/assets/quick.jpg
+    - lib/assets/season.jpg
+    - lib/assets/TickitIcon.jpg
+    - lib/assets/time.jpg
+    - lib/assets/tks.jpg
+    - lib/assets/wallet.jpg
+    - lib/assets/trains.jpg
+    - lib/assets/m.jpg
+
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

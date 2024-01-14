@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
-class CustomCircleIcon extends StatelessWidget {
-  final Color color;
+class ALLINONE extends StatelessWidget {
   final double width;
   final double height;
-  final String TEXT;
+  final String Img;
   final double Font;
 
-  CustomCircleIcon({
-    required this.color,
+  ALLINONE({
     required this.width,
     required this.height,
-    required this.TEXT,
+    required this.Img,
     required this.Font,
   });
 
@@ -24,14 +22,9 @@ class CustomCircleIcon extends StatelessWidget {
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(
             height / 2.0), // Use borderRadius to create an oval shape
-        color: color,
       ),
       child: Center(
-        child: Text(
-          TEXT,
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.w400, fontSize: Font),
-        ),
+        child: Image(image: AssetImage(Img)),
       ),
     );
   }
