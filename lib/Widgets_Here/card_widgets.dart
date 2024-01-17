@@ -23,8 +23,7 @@ class FloatingCardCollections extends StatelessWidget {
         padding: EdgeInsets.all(8),
         child: Card(
           shape: RoundedRectangleBorder(
-            borderRadius:
-                BorderRadius.circular(10.0), // Adjust the radius as needed
+            borderRadius: BorderRadius.circular(10.0),
           ),
           elevation: 10,
           child: Column(
@@ -186,7 +185,7 @@ class FloatingCardCollections extends StatelessWidget {
 
                       Divider(
                           height: 2,
-                          color: Colors.black), // Adjust the height as needed
+                          color: Colors.black), 
                       Container(
                         height: 16,
                         child: Text(" ${tickData.TickType}",
@@ -196,7 +195,7 @@ class FloatingCardCollections extends StatelessWidget {
                       SizedBox(width: 10),
                       Divider(
                           height: 4,
-                          color: Colors.black), // Adjust the height as needed
+                          color: Colors.black), 
                       Container(
                         height: 16,
                         child: Text("ORIDNARY (O)",

@@ -438,7 +438,7 @@ class ticket extends StatelessWidget {
                                 child: Row(
                               children: [
                                 Text(
-                                  "Distance: ${tickData.distance} km",
+                                  "Distance: ${tickData.distance}",
                                   style: TextStyle(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w400),
@@ -573,8 +573,7 @@ class ticket extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
                                 ),
-                                minimumSize: Size(350,
-                                    35), // Set the minimum width and height
+                                minimumSize: Size(350, 35),
                               ),
                             ),
                             ElevatedButton(
@@ -592,8 +591,7 @@ class ticket extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
                                 ),
-                                minimumSize: Size(350,
-                                    35), // Set the minimum width and height
+                                minimumSize: Size(350, 35),
                               ),
                             ),
                             ElevatedButton(

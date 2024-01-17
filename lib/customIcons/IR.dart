@@ -12,13 +12,12 @@ class CustomCircleIconIR extends StatelessWidget {
         height: 30.0,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: const Color.fromARGB(
-              255, 255, 255, 255), // Set your desired circle color
+          color: const Color.fromARGB(255, 255, 255, 255),
         ),
         child: Center(
           child: Image.asset(
             'lib/assets/IR.png',
-            fit: BoxFit.cover, // Specify BoxFit for the image
+            fit: BoxFit.cover,
           ),
         ),
       ),

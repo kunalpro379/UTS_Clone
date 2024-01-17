@@ -16,7 +16,6 @@ class TICKSCREEN extends StatelessWidget {
               color: Colors.white,
             ),
             onPressed: () {
-              // Add navigation logic or use Navigator to go back
               Navigator.pop(context);
             },
           ),
@@ -25,7 +24,7 @@ class TICKSCREEN extends StatelessWidget {
             style: TextStyle(
                 fontSize: 20, color: Colors.white, fontWeight: FontWeight.w400),
           ),
-          titleSpacing: 10, // Adjust the spacing as needed
+          titleSpacing: 10,
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -77,7 +76,6 @@ class TICKSCREEN extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15),
-                // Add the ListView.builder here to display the scrollable content
                 ListView.builder(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),

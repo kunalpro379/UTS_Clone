@@ -15,14 +15,13 @@ class MovingTextWidState extends State<MovingTextWid>
     super.initState();
     Controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 5), // Adjust the duration as needed
+      duration: Duration(seconds: 5), 
     );
     animation = Tween<Offset>(
       begin: Offset(1.0, 0.0),
-      end: Offset(-1.0, 0.0), // Larger end value for continuous movement
+      end: Offset(-1.0, 0.0), 
     ).animate(Controller);
 
-    // Add a listener to restart the animation when it completes
     animation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         Controller.reset();

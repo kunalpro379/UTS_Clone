@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 class CustomCircleIconLetter extends StatelessWidget {
   final Color color;
   final double Height;
-  final String TEXT; // Use Color instead of color
+  final String TEXT;
 
   CustomCircleIconLetter(
-      {required this.color,
-      required this.Height,
-      required this.TEXT}); // Use named parameter
+      {required this.color, required this.Height, required this.TEXT});
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +15,13 @@ class CustomCircleIconLetter extends StatelessWidget {
       height: Height,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: color, // Set the circle color using the parameter
+        color: color,
       ),
       child: Center(
         child: Text(
           TEXT,
           style: TextStyle(
-            color: Colors.white, // Set the color of the "S" text
+            color: Colors.white,
             fontWeight: FontWeight.w700,
           ),
         ),

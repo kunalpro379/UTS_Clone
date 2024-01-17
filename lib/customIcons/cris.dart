@@ -13,12 +13,12 @@ class CustomCircleIconCRIS extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: const Color.fromARGB(
-              255, 255, 255, 255), // Set your desired circle color
+              255, 255, 255, 255), 
         ),
         child: Center(
           child: Image.asset(
             'lib/assets/CRIS.jpg',
-            fit: BoxFit.cover, // Specify BoxFit for the image
+            fit: BoxFit.cover, 
           ),
         ),
       ),

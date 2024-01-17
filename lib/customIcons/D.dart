@@ -23,7 +23,7 @@ class CustomCircleIcon extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(
-            height / 2.0), // Use borderRadius to create an oval shape
+            height / 2.0), 
         color: color,
       ),
       child: Center(
