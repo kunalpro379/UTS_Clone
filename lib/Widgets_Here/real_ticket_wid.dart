@@ -1,9 +1,9 @@
-import 'package:uts_railway_clone/ShowTickData/show_tick_data.dart';
-import 'package:uts_railway_clone/customIcons/D.dart';
-import 'package:uts_railway_clone/customIcons/IR.dart';
-import 'package:uts_railway_clone/customIcons/S.dart';
-import 'package:uts_railway_clone/customIcons/cris.dart';
-import 'package:uts_railway_clone/Custom_Animations/moving_text_wid.dart';
+import 'package:uts_clone/ShowTickData/show_tick_data.dart';
+import 'package:uts_clone/customIcons/D.dart';
+import 'package:uts_clone/customIcons/IR.dart';
+import 'package:uts_clone/customIcons/S.dart';
+import 'package:uts_clone/customIcons/cris.dart';
+import 'package:uts_clone/Custom_Animations/moving_text_wid.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 

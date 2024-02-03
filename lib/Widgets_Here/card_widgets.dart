@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:uts_railway_clone/ShowTickData/show_tick_data.dart';
-import 'package:uts_railway_clone/Widgets_Here/real_ticket_wid.dart';
-import 'package:uts_railway_clone/customIcons/D.dart';
-import 'package:uts_railway_clone/customIcons/S.dart';
+import 'package:uts_clone/ShowTickData/show_tick_data.dart';
+import 'package:uts_clone/Widgets_Here/real_ticket_wid.dart';
+import 'package:uts_clone/customIcons/D.dart';
+import 'package:uts_clone/customIcons/S.dart';
 
 class FloatingCardCollections extends StatelessWidget {
   final TickData tickData;
@@ -182,10 +182,7 @@ class FloatingCardCollections extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 11.5, fontWeight: FontWeight.w400)),
                       ),
-
-                      Divider(
-                          height: 2,
-                          color: Colors.black), 
+                      Divider(height: 2, color: Colors.black),
                       Container(
                         height: 16,
                         child: Text(" ${tickData.TickType}",
@@ -193,9 +190,7 @@ class FloatingCardCollections extends StatelessWidget {
                                 fontSize: 11.5, fontWeight: FontWeight.w400)),
                       ),
                       SizedBox(width: 10),
-                      Divider(
-                          height: 4,
-                          color: Colors.black), 
+                      Divider(height: 4, color: Colors.black),
                       Container(
                         height: 16,
                         child: Text("ORIDNARY (O)",

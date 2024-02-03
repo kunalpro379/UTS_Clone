@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:uts_railway_clone/Custom_Animations/text_animation_homescreen.dart';
-import 'package:uts_railway_clone/customIcons/D.dart';
-import 'package:uts_railway_clone/customIcons/IR.dart';
-import 'package:uts_railway_clone/customIcons/all_in_one_icon.dart';
-import 'package:uts_railway_clone/Custom_TabBars/custom_tapbar.dart';
-import 'package:uts_railway_clone/tab_bar_view/journey_ticket.dart';
-import 'package:uts_railway_clone/tab_bar_view/platform_ticket.dart';
-import 'package:uts_railway_clone/tab_bar_view/qr_booking.dart';
-import 'package:uts_railway_clone/tab_bar_view/quick_booking.dart';
-import 'package:uts_railway_clone/tab_bar_view/season_ticket.dart';
+import 'package:uts_clone/Custom_Animations/text_animation_homescreen.dart';
+import 'package:uts_clone/customIcons/D.dart';
+import 'package:uts_clone/customIcons/cris.dart';
+import 'package:uts_clone/customIcons/IR.dart';
+
+import 'package:uts_clone/customIcons/all_in_one_icon.dart';
+import 'package:uts_clone/Custom_TabBars/custom_tapbar.dart';
+import 'package:uts_clone/tab_bar_view/journey_ticket.dart';
+import 'package:uts_clone/tab_bar_view/platform_ticket.dart';
+import 'package:uts_clone/tab_bar_view/qr_booking.dart';
+import 'package:uts_clone/tab_bar_view/quick_booking.dart';
+import 'package:uts_clone/tab_bar_view/season_ticket.dart';
+import 'package:flutter/material.dart';
 
 class HomeScreenFake extends StatelessWidget {
   const HomeScreenFake({Key? key}) : super(key: key);
@@ -98,7 +101,7 @@ class HomeScreenFake extends StatelessWidget {
                 thickness: 1,
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 5, left: 10, right: 10),
+                padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Container(
                   height: 40,
                   child: Row(
@@ -138,17 +141,17 @@ class HomeScreenFake extends StatelessWidget {
               ),
               Container(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                height: 70,
-                constraints: BoxConstraints.expand(height: 50),
+                height: 60,
+                constraints: BoxConstraints.expand(height: 40),
                 child: TabBar(
                   isScrollable: false,
                   physics: NeverScrollableScrollPhysics(),
                   tabs: [
                     CustomTab(title: "Journey", subtitle: "Ticket"),
-                    CustomTab(title: "Journey", subtitle: "Ticket"),
-                    CustomTab(title: "Journey", subtitle: "Ticket"),
-                    CustomTab(title: "Journey", subtitle: "Ticket"),
-                    CustomTab(title: "Journey", subtitle: "Ticket"),
+                    CustomTab(title: "QR", subtitle: "Booking"),
+                    CustomTab(title: "Quick", subtitle: "Booking"),
+                    CustomTab(title: "Platform", subtitle: "Ticket"),
+                    CustomTab(title: "Season", subtitle: "Ticket"),
                   ],
                 ),
               ),
@@ -163,6 +166,28 @@ class HomeScreenFake extends StatelessWidget {
                   ],
                 ),
               ),
+              Container(
+                height: 40,
+                color: const Color.fromARGB(255, 188, 188, 188),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 237, 236, 236),
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(30),
+                          topRight: Radius.circular(30))),
+                  height: 30,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CustomCircleIconCRIS(),
+                      Text(
+                        "Center for Railway Information Systems (CRIS)",
+                        style: TextStyle(color: Colors.red),
+                      )
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),

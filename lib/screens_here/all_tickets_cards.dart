@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uts_railway_clone/ShowTickData/show_tick_data.dart';
-import 'package:uts_railway_clone/Widgets_Here/card_widgets.dart';
+import 'package:uts_clone/ShowTickData/show_tick_data.dart';
+import 'package:uts_clone/Widgets_Here/card_widgets.dart';
 
 class TICKSCREEN extends StatelessWidget {
   const TICKSCREEN({Key? key}) : super(key: key);

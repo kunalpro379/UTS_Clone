@@ -39,6 +39,9 @@ class _FontStyleChangingAnimationState extends State<FontStyleChangingAnimation>
       builder: (context, child) {
         return Column(
           children: [
+            SizedBox(
+              height: 10,
+            ),
             Text(
               "INDIAN RAILWAYS OFFERS 3% BONUS ON",
               style: _textStyleAnimation.value,
