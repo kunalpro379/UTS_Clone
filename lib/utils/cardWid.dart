@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uts_clone/customIcons/all_in_one_icon.dart';
+import 'package:uts_railway_clone/customIcons/all_in_one_icon.dart';
 
 class CardWidget extends StatelessWidget {
   final double fontSize;

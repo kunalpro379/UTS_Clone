@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:uts_clone/customIcons/all_in_one_icon.dart';
-import 'package:uts_clone/screens_here/all_tickets_cards.dart';
+import 'package:uts_railway_clone/customIcons/all_in_one_icon.dart';
+import 'package:uts_railway_clone/screens_here/all_tickets_cards.dart';
 
-import 'package:uts_clone/utils/cardWid.dart';
+import 'package:uts_railway_clone/utils/cardWid.dart';
 
 class CommonTabView extends StatelessWidget {
   const CommonTabView({Key? key}) : super(key: key);

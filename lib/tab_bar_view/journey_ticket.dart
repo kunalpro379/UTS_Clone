@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:uts_clone/tab_bar_view/common_tab_view.dart';
-import 'package:uts_clone/Custom_Animations/customClick.dart';
-import 'package:uts_clone/Widgets_Here/BulletClickLogic.dart';
-import 'package:uts_clone/Widgets_Here/afterBuletClikedChange.dart';
+import 'package:uts_railway_clone/tab_bar_view/common_tab_view.dart';
+import 'package:uts_railway_clone/Custom_Animations/customClick.dart';
+import 'package:uts_railway_clone/Widgets_Here/BulletClickLogic.dart';
+import 'package:uts_railway_clone/Widgets_Here/afterBuletClikedChange.dart';
+import 'package:uts_railway_clone/customIcons/CustomSelectorIcon.dart';
+import 'package:uts_railway_clone/utils/ElevatedButtons.dart';
+import 'package:uts_railway_clone/screens_here/GetFare.dart';
 
 class JrnyTck extends StatefulWidget {
   JrnyTck({Key? key}) : super(key: key);
@@ -32,8 +35,7 @@ class _JrnyTckState extends State<JrnyTck> {
               color: Colors.yellow,
             ),
             Container(
-              height: 300,
-              width: 360,
+              width: 380,
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
@@ -55,7 +57,7 @@ class _JrnyTckState extends State<JrnyTck> {
                         ),
                       ),
                       height: 40,
-                      width: 360,
+                      width: 380,
                       child: Padding(
                         padding: const EdgeInsets.only(
                           left: 20,
@@ -88,6 +90,61 @@ class _JrnyTckState extends State<JrnyTck> {
                       Card1(),
                     if (selectedBul == 1) // Show Card2 if selectedBul is 1
                       Card2(),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CustomSelector(
+                            text1: "Depart from",
+                            text2: "STN",
+                            text3: "Station Name",
+                          ),
+                          Icon(Icons.arrow_forward),
+                          CustomSelector(
+                            text1: "Depart from",
+                            text2: "STN",
+                            text3: "Station Name",
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15.0, right: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 150,
+                            child: CustomButton(
+                              text: 'NEXT TRAINS',
+                              fontSize: 15,
+                              color: Colors.orange,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => GetFare()));
+                              },
+                            ),
+                          ),
+                          Container(
+                            width: 150,
+                            child: CustomButton(
+                              text: 'GET FARE',
+                              fontSize: 15,
+                              color: Colors.orange,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => GetFare()));
+                              },
+                            ),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),

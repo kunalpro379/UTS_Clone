@@ -20,8 +20,7 @@ class ALLINONE extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.circular(
-            height / 2.0), 
+        borderRadius: BorderRadius.circular(height / 2.0),
       ),
       child: Center(
         child: Image(image: AssetImage(Img)),

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:uts_clone/Custom_Animations/text_animation_homescreen.dart';
-import 'package:uts_clone/customIcons/D.dart';
-import 'package:uts_clone/customIcons/cris.dart';
-import 'package:uts_clone/customIcons/IR.dart';
+import 'package:uts_railway_clone/Custom_Animations/text_animation_homescreen.dart';
+import 'package:uts_railway_clone/customIcons/D.dart';
+import 'package:uts_railway_clone/customIcons/cris.dart';
+import 'package:uts_railway_clone/customIcons/IR.dart';
 
-import 'package:uts_clone/customIcons/all_in_one_icon.dart';
-import 'package:uts_clone/Custom_TabBars/custom_tapbar.dart';
-import 'package:uts_clone/tab_bar_view/journey_ticket.dart';
-import 'package:uts_clone/tab_bar_view/platform_ticket.dart';
-import 'package:uts_clone/tab_bar_view/qr_booking.dart';
-import 'package:uts_clone/tab_bar_view/quick_booking.dart';
-import 'package:uts_clone/tab_bar_view/season_ticket.dart';
+import 'package:uts_railway_clone/customIcons/all_in_one_icon.dart';
+import 'package:uts_railway_clone/Custom_TabBars/custom_tapbar.dart';
+import 'package:uts_railway_clone/tab_bar_view/journey_ticket.dart';
+import 'package:uts_railway_clone/tab_bar_view/platform_ticket.dart';
+import 'package:uts_railway_clone/tab_bar_view/qr_booking.dart';
+import 'package:uts_railway_clone/tab_bar_view/quick_booking.dart';
+import 'package:uts_railway_clone/tab_bar_view/season_ticket.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenFake extends StatelessWidget {
@@ -18,6 +18,9 @@ class HomeScreenFake extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double cardWth = MediaQuery.of(context).size.width;
+    final double cardHgt = MediaQuery.of(context).size.width * 2;
+
     return MaterialApp(
       home: DefaultTabController(
         length: 5,
@@ -26,7 +29,7 @@ class HomeScreenFake extends StatelessWidget {
             title: Row(
               children: [
                 SizedBox(
-                  width: 20,
+                  width: 15,
                 ),
                 CustomCircleIconIR(),
                 SizedBox(
@@ -100,58 +103,59 @@ class HomeScreenFake extends StatelessWidget {
               Divider(
                 thickness: 1,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
-                child: Container(
-                  height: 40,
-                  child: Row(
-                    children: [
-                      ALLINONE(
-                          width: 60,
-                          height: 60,
-                          Img: "lib/assets/jrny_ticket.jpg",
-                          Font: 0),
-                      SizedBox(width: 14),
-                      ALLINONE(
-                          width: 65,
-                          height: 65,
-                          Img: "lib/assets/qr_code.jpg",
-                          Font: 0),
-                      SizedBox(width: 15),
-                      ALLINONE(
-                          width: 60,
-                          height: 60,
-                          Img: "lib/assets/quick.jpg",
-                          Font: 0),
-                      SizedBox(width: 15),
-                      ALLINONE(
-                          width: 60,
-                          height: 60,
-                          Img: "lib/assets/trains.jpg",
-                          Font: 0),
-                      SizedBox(width: 15),
-                      ALLINONE(
-                          width: 60,
-                          height: 60,
-                          Img: "lib/assets/season.jpg",
-                          Font: 0),
-                    ],
-                  ),
-                ),
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.only(left: 2, right: 2),
+              //   child: Container(
+              //     height: 40,
+              //     child: Row(
+              //       children: [],
+              //     ),
+              //   ),
+              // ),
               Container(
                 color: const Color.fromARGB(255, 255, 255, 255),
-                height: 60,
-                constraints: BoxConstraints.expand(height: 40),
+                height: 200,
+                constraints: BoxConstraints.expand(
+                  height: 75,
+                ),
                 child: TabBar(
                   isScrollable: false,
                   physics: NeverScrollableScrollPhysics(),
                   tabs: [
-                    CustomTab(title: "Journey", subtitle: "Ticket"),
-                    CustomTab(title: "QR", subtitle: "Booking"),
-                    CustomTab(title: "Quick", subtitle: "Booking"),
-                    CustomTab(title: "Platform", subtitle: "Ticket"),
-                    CustomTab(title: "Season", subtitle: "Ticket"),
+                    // CustomTab(title: "Journey", subtitle: "Ticket"),
+                    // CustomTab(title: "QR", subtitle: "Booking"),
+                    // CustomTab(title: "Quick", subtitle: "Booking"),
+                    // CustomTab(title: "Platform", subtitle: "Ticket"),
+                    // CustomTab(title: "Season", subtitle: "Ticket"),
+                    ALLINONE(
+                        width: cardWth / 5,
+                        height: cardHgt,
+                        Img: "lib/assets/jrny_ticket.jpg",
+                        Font: 0),
+                    //SizedBox(width: 14),
+                    ALLINONE(
+                        width: cardWth / 5,
+                        height: cardHgt,
+                        Img: "lib/assets/qr_code.jpg",
+                        Font: 0),
+                    // SizedBox(width: 15),
+                    ALLINONE(
+                        width: cardWth / 5,
+                        height: cardHgt,
+                        Img: "lib/assets/quick.jpg",
+                        Font: 0),
+                    //SizedBox(width: 15),
+                    ALLINONE(
+                        width: cardWth / 5,
+                        height: cardHgt,
+                        Img: "lib/assets/trains.jpg",
+                        Font: 0),
+                    //SizedBox(width: 15),
+                    ALLINONE(
+                        width: cardWth / 5,
+                        height: cardHgt,
+                        Img: "lib/assets/season.jpg",
+                        Font: 0),
                   ],
                 ),
               ),
